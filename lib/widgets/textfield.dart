@@ -24,7 +24,7 @@ class CustomShadowTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double containerWidth = screenWidth * 0.9; // Adjust the width as needed
+    double containerWidth = screenWidth * 0.9;
 
     return Padding(
       padding: EdgeInsets.only(left: 0),
@@ -87,8 +87,8 @@ class CustomShadowTextField extends StatelessWidget {
                 ),
                 errorText: validator != null ? validator!(controller.text) : null,
                 errorStyle: TextStyle(
-                  color: Colors.red, // Customize error text color here
-                  fontSize: 10, // Customize error text font size here
+                  color: Colors.red, 
+                  fontSize: 10, 
                 ),
                 errorBorder: InputBorder.none,
                 contentPadding: EdgeInsets.only(left: 10, top: 20, bottom: 3),

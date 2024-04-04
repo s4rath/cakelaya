@@ -299,7 +299,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontWeight: FontWeight.w400,
                       ),
                       onChanged: (String? newValue) {
-                        // Update the value of the genderController
+                        
                         genderController.text = newValue!;
                       },
                       icon: SizedBox.shrink(),
@@ -326,22 +326,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ElevatedButton(
           onPressed: () {
             if (_formKey.currentState!.validate()) {
-              // If the form is valid, proceed with your action
-              // For example, you can call your update profile function here
+        
               _resetFields();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text('Profile updated successfully'),
-                  duration: Duration(seconds: 2), // Optional duration
+                  duration: Duration(seconds: 2), 
                 ),
               );
-              // Fluttertoast.showToast(
-              //   msg: "Profile updated successfully",
-              //   toastLength: Toast.LENGTH_SHORT,
-              //   gravity: ToastGravity.BOTTOM,
-              //   backgroundColor: Colors.black.withOpacity(0.8),
-              //   textColor: Colors.white,
-              // );
+
             }
           },
           style: ElevatedButton.styleFrom(
